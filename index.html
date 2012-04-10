@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic Pub Sub with jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="pubsub.js" type="text/javascript" charset="utf-8"></script>
+    <style type="text/css" media="all">
+      .flash { display: none; width: 90%; margin: 0 auto; padding: 10px; position: absolute; top: 0; background: rgba(0,0,0,0.5); color: #fff; text-align: center; }
+      body {
+        padding-top: 50px;
+        font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-size: 16px;
+      }
+
+      form {
+        float: left;
+        width: 40%;
+      }
+      .messages {
+        float: right;
+        width: 45%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flash"></div>
+    <form action="get" method="">
+      <label>Send a Message:</label> <input type="text" name="message" />
+      <input type="submit" value="Submit">
+    </form>
+    <div class="messages">
+      <h2>Messages Recieved</h2>
+      <ul class="recieved_messages">
+      </ul>
+    </div>
+
+
+</html>
